@@ -1,0 +1,496 @@
+/* CSS for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-size:16px ;
+}
+
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    overflow-x: hidden;
+    background: #f1f0f0;
+}
+/* CSS for header */
+#header{
+    width: 100%;
+    height: 295px;
+    background-color: #fe7676;
+    overflow: hidden;
+}
+
+.content-header{
+    text-align: center;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header h1 a{
+    font-size:76px;
+    font-weight:400;
+}
+
+.content-header p,
+.content-header a{
+    color:white;
+    font-style: italic;
+}
+
+.content-header p{
+    font-size:14px;
+}
+
+.content-header a{
+    transition: all 0.2s ease-in-out;
+}
+
+.content-header a:hover{
+    color: #eee;
+}
+
+/* CSS for nav */
+
+#nav{
+    background: #fff;
+    min-height: 60px;
+}
+
+#menu{
+    line-height:60px;
+}
+
+.menu1{
+    display:flex;
+    justify-content: center;
+}
+
+.menu2{
+    opacity: 0;
+    width: 131px;
+    z-index: 99;
+    background: #fe7676;
+    margin-top:5px;
+    padding:16px 0;
+    transition:all 0.2s ease-in-out;
+    position: relative;
+}
+
+.menu3{
+    opacity: 0;
+    background-color: #fff;
+    position:absolute;
+    right: -131px;
+    top: 60px;
+    width: 131px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 18px 0;    
+}
+
+.menu1 a{
+    margin: 0 20px;
+    color:#000;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu1>li>a{
+    text-transform: uppercase;
+}
+
+.menu1>li>a:hover{
+    color:#fe7676;
+}
+
+.menu2>li>a{
+    display: block;
+    color: #fff;
+    font: 12px/14px "Open Sans", Georgia, sans-serif;
+    padding: 3px 0;
+    text-indent: 26px;
+    margin: 0;
+}
+
+.menu2>li>a:hover{
+    background-color: #fff;
+    color: #fe7676;
+}
+
+#menu .menu1 li:hover .menu2{
+    opacity: 1;
+}
+
+.menu3>li>a{
+    display: block;
+    color: #000;
+    font: 12px/14px "Open Sans", Georgia, sans-serif;
+    padding: 3px 0;
+    text-indent: 26px;
+    margin: 0;
+}
+
+.menu3 li a:hover{
+    background-color: #fe7676;
+    color: #fff;
+}
+
+#menu .menu1  .menu2 li:hover .menu3{
+    opacity: 1;
+}
+
+.btn-taskbar-mobile {
+    color: #fe7676;
+    padding: 5px;
+    background-color: #ccc;
+}
+
+/* CSS for content */
+#content {
+    position: relative;
+    top: -96px;
+    background-color: #f1f0f0;
+}
+/* CSS for left-row */
+.left-row-content{
+    margin-top:65px;
+}
+
+.left-row-content h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.left-row-content .btn-left-content{
+    margin-top:46px;
+}
+
+.left-row-content .header-left-content{
+    font: 18px/30px 'Open Sans', Arial, sans-serif;
+    color: #6f6f6f;
+    transition: all 0.2s linear;
+}
+
+.left-row-content a:hover{
+    color: #fe7676;
+}
+
+.left-row-content .second-btn{
+    font-size:20px;
+    color: #fe7676; 
+}
+
+.left-row-content .second-btn:hover{
+    color: #000;
+}
+
+/* CSS for 1 -2-3 blog */
+.blog-page,
+.blog-img{
+    margin-top: 18px;
+}
+
+.blog-img img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-page p{
+    font: 14px/21px Arial, Helvetica, sans-serif;
+    color: #777675;
+    margin-top:13px;
+    font-style: justify;
+}
+
+.blog-page-btn {
+    display: inline-block;
+    color: #fff;
+    background: #fe7676;
+    font: 12px/20px "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 18px;
+    text-transform: uppercase;
+    padding: 7px 24px 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.blog-page-btn:hover{
+    color: #fe7676;
+    background-color: #000;
+}
+
+/* CSS for right-row */
+.right-row-content{
+    margin-top: 65px;
+}
+
+.right-row-content h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.list-categories {
+    margin-top: 48px;
+    font: 12px/18px Arial, Helvetica, sans-serif;
+}
+
+.list-categories li{
+    display: block;
+    padding-left: 17px;
+    margin-bottom: 12px;
+    background: url(../img/list_marker.png) 1px 5px no-repeat;
+}
+
+.list-categories li a{
+    display: inline-block; 
+    color: #777675;
+    font: 12px/16px Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.list-categories li a:hover{
+    color: #dd745c;
+}
+
+/* CSS for search blog */
+.search-blog{
+    margin-top: 51px;
+}
+
+.input-search{
+    margin-top: 30px;
+}
+
+.input-search input{
+    width: 100%;
+    float: left;
+    color: #b3b1af;
+    font: 13px/20px Arial, Helvetica, sans-serif;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    padding: 5px 5px 5px 14px;
+}
+
+.input-search a{
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    /* Luc dau anh o tren */
+    background: url(../img/zoom_icon.png) top no-repeat;
+    margin-left: -35px;
+    margin-top: 7px;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.more_btn2:hover {
+    /* Hover vao thi anh o duoi */
+    background: url(../img/zoom_icon.png) bottom no-repeat;
+}
+
+a:hover {
+    color: #000;
+}
+
+/* CSS for Recent-posts */
+.recent-posts {
+    margin-top: 65px;
+}
+
+.card-recent-posts{
+    margin-top:38px;
+    display:flex;
+}
+
+.card-recent-posts img{
+    width: 100%;
+    height: auto;
+}
+
+.card-recent-posts a{
+    color: #6f6f6f; 
+    font: 20px/21px Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease;
+}
+
+.card-recent-posts p{
+    font: 16px/21px Arial, Helvetica, sans-serif;
+    color: #777675;
+}
+
+.btn-recent-posts {
+    margin: 4px 0;
+}
+
+.card-recent-posts a:hover{
+    color: #fe7676;
+}
+
+/* CSS for footer */
+#footer {
+    background-color: #fe7676;
+}
+
+.header-text-footer{
+    padding-top: 44px;
+    /* padding-bottom: 70px; */
+}
+
+.body-text-footer {
+    text-align: center;
+}
+
+.body-text-footer p{
+    font: 18px/30px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 24px;
+}
+
+.header-text-footer p{
+    text-align: center;
+    font: 24px/24px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.item-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 44px;
+}
+
+.item-footer a i{
+    color: #fff;
+    font-size: 40px;
+    margin:0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.item-footer a:hover i{
+    color: #482222;
+}
+
+
+/* CSS for footer-desc */
+.text-desc {
+    text-align: center;
+    padding: 11px 0 10px;
+}
+
+.text-desc a,
+.text-desc p{
+    font: 13px/20px "Open Sans", Arial, sans-serif;
+    color: #171717;
+    margin-top: 2px;
+}
+
+.text-desc a{
+    transition: all 0.2s ease-in-out;
+}
+
+.text-desc:hover a{
+    color: #fe7676;
+}
+
+/* Repon for table */
+@media (min-width:740px) and (max-width:1023px){
+}
+
+/* Repon for mobile */
+@media (max-width:739px){
+    /* CSS for Header */
+    .content-header h1 a{
+        font-size:59px;
+    }
+
+    /* CSS for menu */
+    .menu1{
+        display: inline-block!important;
+        position: relative;
+    }
+    #menu{
+        background-color: #fff;
+        width: 340px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s linear;
+    }
+    #menu .menu1 .menu2{
+        position: absolute;
+        right: -77px;
+        top: -5px;
+    }
+
+    #menu .menu1 .menu2 .menu3{
+        position: absolute;
+        right:-131px;
+        top:60px;
+    }
+    .menu3,
+    .menu2{
+        opacity: 1;
+    }
+
+    /* CSS for btn */
+    .btn-taskbar-mobile{
+        top: 306px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* CSS for slider */
+    /* .background-silder {
+        top: 0;
+    } */
+
+    /* CSS for content */
+    #content {
+        top: 0!important;
+        padding-bottom: 65px;
+    }
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .card-recent-posts img{
+        width: 100vw;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
+}
