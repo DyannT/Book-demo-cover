@@ -12,16 +12,41 @@
 </head>
 
 <body>
+    <!-- Start-Loading -->
+    <div class="loading">
+        <div class="loader">
+            <div class="loader-inner">
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src = './assets/js/script-loading.js'></script>
+    <!-- End-loading -->
+
     <div id="main">
         <div class="back">
-            <form>
+            <form class="form-back">
                 <input class="back-input" type="button" value="Go back!">
             </form>
         </div>
         <div class="row">
             <div class="col l-12 m-12 c-12">
                 <div class="login-admin">
-                    <h1>Login Admin</h1>
+                    <h1><span class="login-text">Login</span> <span class="account-text">Account</span> </h1>
                     <button class="login-main">Login</button>
                     <button class="register-main">Register</button>
                 </div>
@@ -102,7 +127,6 @@
         </div>
     </div>
     <!-- End form register -->
-
     <script src="./assets/js/script-login.js"></script>
 </body>
 </html>

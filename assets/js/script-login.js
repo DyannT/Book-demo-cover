@@ -20,6 +20,10 @@ function createData(username, password) {
   this.password = password;
 }
 
+// Text
+const loginText = document.querySelector('.login-text')
+const accountText = document.querySelector('.account-text')
+// Login
 const loGin = document.querySelector('.login-main')
 const modal = document.querySelector('.login-form')
 const closebtn = document.querySelector('.close-input-form')
@@ -51,7 +55,14 @@ const passWordCreate = document.querySelector('.create-password-form')
 // console.log(modalCreate)
 // console.log(closebtn1)
 // console.log(createAcc)
-
+// console.log(loginText)
+// console.log(accountText)
+// Change color text
+  
+setInterval(function() {
+  loginText.classList.toggle('aqua')
+  accountText.classList.toggle('aqua')
+},500)
 
 
 // Open Login
