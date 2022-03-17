@@ -13,7 +13,7 @@ const data = [
   }
 ]
 
-const data1=[]
+// const data1=[]
 
 function createData(username, password) {
   this.username = username;
@@ -103,22 +103,25 @@ createAcc.onclick = function () {
   var createPassword = passWordCreate.value;
   // console.log(createPassword)
   var user1 = new createData(createUser,createPassword)
-  data1.push(user1);
+  // if(data1.indexOf('createUser') && data1.indexOf('createUser'))
+  // console.log(data1.indexOf(['createUser']))
   // alert(data1);
   // console.log(user.username)
   // console.log(user.password)
   // console.log(user)
   if(checkCreate(user1.username,user1.password)){
     isRegister = true;
+    data.push(user1);
   }
-  console.log(data.concat(data1))
+  // checkRepeat()
+  console.log(data)
   actionCreate()
 }
 
 function checkCreate(username,password){
   for(var i=0;i<data.length;i++){
     if(data[i].username === username && data[i].password === password){
-      return false;
+        return false;
     }
     else{
       continue;
@@ -127,21 +130,23 @@ function checkCreate(username,password){
   return true;
 }
 
+
+// function checkRepeat() {
+//   console.log(data1[username])
+// }
+
 // alert(data1.concat(data))
 
 function actionCreate(){
   if(isRegister){
     alert("Đăng ký thành công!!!")
-    formLogin.action="javascript:void(0);"
+    formLogin.action="#"
   }
   else{
     alert("Tài khoản hoặc mật khẩu bị trùng!!!")
-    formLogin.action="javascript:void(0);"
+    formLogin.action="#"
   }
 }
-
-
-
 
 
 
@@ -163,10 +168,10 @@ loginAdmin.onclick = function () {
 }
 
 function checkLogin(username,password) {
-  for(var i=0; i< (data.concat(data1)).length; i++) {
+  for(var i=0; i< (data).length; i++) {
     // console.log((data.concat(data1))[i].username)
-      if((data.concat(data1)).hasOwnProperty(i)){
-          if(username === (data.concat(data1))[i].username && password === (data.concat(data1))[i].password){
+      if((data).hasOwnProperty(i)){
+          if(username === (data)[i].username && password === (data)[i].password){
               return true
           }
           else{
@@ -183,7 +188,7 @@ function check() {
     formLogin.action = 'hosting.html'
   } else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
-    formLogin.action = 'javascript:void(0);'
+    formLogin.action = '#'
 }}
 // BackBtn
 backbtn.onclick = function () {
