@@ -22,7 +22,6 @@ function createData(username, password) {
 
 // Text
 const loginText = document.querySelector('.login-text')
-const accountText = document.querySelector('.account-text')
 // Login
 const loGin = document.querySelector('.login-main')
 const modal = document.querySelector('.login-form')
@@ -57,12 +56,19 @@ const passWordCreate = document.querySelector('.create-password-form')
 // console.log(createAcc)
 // console.log(loginText)
 // console.log(accountText)
+
+
 // Change color text
-  
-setInterval(function() {
-  loginText.classList.toggle('aqua')
-  accountText.classList.toggle('aqua')
-},500)
+function generateColor() {
+  let color;
+  let r = Math.floor(Math.random() * 256)
+  let g = Math.floor(Math.random() * 256)
+  let b = Math.floor(Math.random() * 256)
+
+  color = `rgb(${r},${g},${b})`
+  loginText.style.color = color;
+}
+setInterval(generateColor,1000)
 
 
 // Open Login
