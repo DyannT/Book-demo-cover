@@ -68,7 +68,7 @@ function generateColor() {
   color = `rgb(${r},${g},${b})`
   loginText.style.color = color;
 }
-setInterval(generateColor,1000)
+setInterval(generateColor,3000)
 
 
 // Open Login
@@ -111,10 +111,10 @@ closebtn1.onclick = function () {
 
 
 // // Check register
+
 var isRegister = false;
 
-
-createAcc.onclick = function () {
+createAcc.onclick = function (e) {
   var createUser = userNameCreate.value;
   // console.log(createUser)
   var createPassword = passWordCreate.value;
@@ -129,16 +129,22 @@ createAcc.onclick = function () {
   if(checkCreate(user1.username,user1.password)){
     isRegister = true;
     data.push(user1);
+    actionCreate(e)
   }
   // checkRepeat()
+  else{
+    alert("Tài khoản hoặc mật khẩu bị trùng!!!")
+    e.preventDefault()
+  }
   console.log(data)
-  actionCreate()
+  // alert("Tài khoản hoặc mật khẩu bị trùng!!!")
 }
 
 function checkCreate(username,password){
   for(var i=0;i<data.length;i++){
     if(data[i].username === username && data[i].password === password){
-        return false;
+        // alert("Tk or mk bi trung")
+        return false;  
     }
     else{
       continue;
@@ -154,15 +160,15 @@ function checkCreate(username,password){
 
 // alert(data1.concat(data))
 
-function actionCreate(){
+function actionCreate(e){
   if(isRegister){
     alert("Đăng ký thành công!!!")
-    formLogin.action="#"
+    e.preventDefault()
   }
-  else{
-    alert("Tài khoản hoặc mật khẩu bị trùng!!!")
-    formLogin.action="#"
-  }
+  // else{
+  //   // alert("Tài khoản hoặc mật khẩu bị trùng!!!")
+  //   e.preventDefault()
+  // }
 }
 
 
@@ -171,7 +177,7 @@ function actionCreate(){
 // Check Login
 var loggedIn = false;
 
-loginAdmin.onclick = function () {
+loginAdmin.onclick = function (e) {
   var password = passWord.value;
   var username = userName.value;
 
@@ -181,7 +187,7 @@ loginAdmin.onclick = function () {
   if(checkLogin(username,password)){
     loggedIn = true;
   }
-  check();
+  check(e);
 }
 
 function checkLogin(username,password) {
@@ -199,13 +205,13 @@ function checkLogin(username,password) {
   return false
 }
 
-function check() {
+function check(e) {
   if(loggedIn) {
     alert('Đăng nhập thành công!!');
     formLogin.action = 'hosting.html'
   } else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
-    formLogin.action = '#'
+    e.preventDefault()
 }}
 // BackBtn
 backbtn.onclick = function () {
