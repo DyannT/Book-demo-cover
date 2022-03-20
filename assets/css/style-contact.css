@@ -315,6 +315,10 @@ body{
 
 /* Repon for table */
 @media (min-width:740px) and (max-width:1023px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
     #content .gg-map{
         width: 400px;
         height:300px;
@@ -323,6 +327,10 @@ body{
 
 /* Repon for mobile */
 @media (max-width:739px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
     /* CSS for Header */
     .content-header h1 a{
         font-size:59px;

@@ -68,7 +68,7 @@ function generateColor() {
   color = `rgb(${r},${g},${b})`
   loginText.style.color = color;
 }
-setInterval(generateColor,3000)
+setInterval(generateColor,2000)
 
 
 // Open Login
@@ -206,10 +206,17 @@ function checkLogin(username,password) {
 }
 
 function check(e) {
-  if(loggedIn) {
+  if(isRegister && loggedIn){
+    alert('Đăng nhập thành công!!');
+    formLogin.action = 'hosting-create.html'
+  }
+
+  else if(loggedIn) {
     alert('Đăng nhập thành công!!');
     formLogin.action = 'hosting.html'
-  } else {
+  } 
+  
+  else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
     e.preventDefault()
 }}

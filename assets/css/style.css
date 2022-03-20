@@ -26,8 +26,6 @@ body{
     overflow-x: hidden;
     background: #f1f0f0;
 }
-
-
 /* CSS for header */
 #header{
     width: 100%;
@@ -412,11 +410,18 @@ body{
 
 /* Repon for table */
 @media (min-width:740px) and (max-width:1023px){
-    
+    .desc-content img{
+        width: 100%;
+    }
 }
 
 /* Repon for mobile */
 @media (max-width:739px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
+
     /* CSS for Header */
     .content-header h1 a{
         font-size:59px;
@@ -457,6 +462,7 @@ body{
 
     /* CSS for btn */
     .btn-taskbar-mobile{
+        padding:10px;
         top: 306px;
         right: 0;
         position: absolute;

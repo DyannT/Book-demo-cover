@@ -417,6 +417,10 @@ a:hover {
 
 /* Repon for mobile */
 @media (max-width:739px){
+        /* CSS for main overflow */
+        #main{
+            overflow-x: hidden;
+        }
     /* CSS for Header */
     .content-header h1 a{
         font-size:59px;

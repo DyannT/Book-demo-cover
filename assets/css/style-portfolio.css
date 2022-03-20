@@ -183,11 +183,15 @@ body{
 
 .card-img{
     position: relative;
-    cursor: pointer;
 }
 
 .card-location img{
     width:100%;
+    transition: all 0.2s ease-in-out;   
+}
+
+.card-location:hover img{
+    opacity: 0.6;
 }
 
 .card-location .zoom{
@@ -212,6 +216,11 @@ body{
     opacity: 1;
 }
 
+.card-img button{
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
 
 .card-location-content {
     padding: 23px 16px 24px 20px;
@@ -311,24 +320,62 @@ body{
 }
 
 /* CSS for openPic */
-/* .overlay {
+.overlay {
     position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    display:none;
-    align-items: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: none;
     justify-content: center;
-    z-index: 10000;
+    align-items: center;
 }
 
 .overlay img{
-    display: inline-block;
-    width: 600px;
-    vertical-align: middle;
-} */
+    width: 50%;
+}
+
+.close-zoom,
+.btn-left-move,
+.btn-right-move {
+    border: none;
+    padding: 10px;
+    color: #fe7676;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-left-move{
+    position: fixed;
+    left: 0;
+}
+
+.btn-left-move:hover{
+    background-color: #000;
+}
+
+.btn-right-move{
+    position: fixed;
+    right: 0;
+}
+
+.btn-right-move:hover{
+    background-color: #000;
+}
+
+.close-zoom{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
+
+.close-zoom:hover{
+    background-color: #000;
+}
+
 
 /* Repon for table */
 @media (min-width:740px) and (max-width:1023px){

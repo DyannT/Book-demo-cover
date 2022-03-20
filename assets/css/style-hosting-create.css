@@ -1,0 +1,222 @@
+/* CSS for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-size:16px ;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+body{   
+    background-image: url(../img/paper.gif);
+    height: fit-content;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* CSS for background */
+div#content {
+    margin-top: 75px;
+}
+
+.info-content{
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.list-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.list-info li{
+    margin-bottom:10px;
+    font-style: italic;
+}
+
+.back-input {
+    padding: 8px;
+    background: #fe7676;
+    border: none;
+    cursor: pointer;
+}
+
+.info-content img{
+    border-radius: 50%;
+}
+
+.info-content .name-admin{
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.btn-taskbar-mobile{
+    display:none;
+    cursor: pointer;
+    width: fit-content;
+    color: #fe7676;
+    padding:5px;
+    background-color: #ccc;
+}
+
+.people-see {
+    width: fit-content;
+    padding: 30px;
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.people-see1{
+    margin:100px 0;
+}
+
+.counter {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fe7676;
+}
+
+/* CSS for footer */
+#footer {
+    background-color: #fe7676;
+}
+
+.header-text-footer{
+    padding-top: 44px;
+    /* padding-bottom: 70px; */
+}
+
+.body-text-footer {
+    text-align: center;
+}
+
+.body-text-footer p{
+    font: 18px/30px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 24px;
+}
+
+.header-text-footer p{
+    text-align: center;
+    font: 24px/24px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.item-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 44px;
+}
+
+.item-footer a i{
+    color: #fff;
+    font-size: 40px;
+    margin:0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.item-footer a:hover i{
+    color: #482222;
+}
+
+/* CSS for footer-desc */
+.text-desc {
+    text-align: center;
+    padding: 11px 0 10px;
+}
+
+.text-desc a,
+.text-desc p{
+    font: 13px/20px "Open Sans", Arial, sans-serif;
+    color: #171717;
+    margin-top: 2px;
+}
+
+.text-desc a{
+    transition: all 0.2s ease-in-out;
+}
+
+.text-desc:hover a{
+    color: #fe7676;
+}
+
+@media (min-width:740px) and (max-width:1023px){
+    #main {
+        overflow-x: hidden;
+    }
+    .info-content {
+        justify-content: center;
+    }
+    .btn-taskbar-mobile{
+        /* padding:10px; */
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    .list-info{
+        background-color: #fff;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:739px){
+    #main {
+        overflow-x: hidden;
+    }
+    .info-content {
+        justify-content: center;
+    }
+    .info-content img{
+        width: 200px;
+    }
+    .info-content .div-name-admin{
+        margin: auto 0;
+    }
+    .btn-taskbar-mobile{
+        /* padding:10px; */
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+    .list-info{
+        background-color: #fff;
+        width: 100%;
+    }
+    .people-see{
+        margin-bottom:50px;
+    }
+    .people-see1{
+        margin-top:0;
+    }
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
+}
