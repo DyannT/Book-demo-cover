@@ -38,7 +38,8 @@ const closebtn1 = document.querySelector('.close-register-form')
 const createAcc = document.querySelector('.register')
 const userNameCreate = document.querySelector('.create-user-form')
 const passWordCreate = document.querySelector('.create-password-form')
-
+// Loading
+const loading = document.querySelector('.loading')
 
 
 
@@ -224,3 +225,4 @@ function check(e) {
 backbtn.onclick = function () {
   history.back()
 };
+
