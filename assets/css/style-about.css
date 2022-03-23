@@ -70,7 +70,7 @@ body{
 }
 
 /* CSS for loading */
-.loading{
+/* .loading{
     position: fixed;
     top: 0;
     right: 0;
@@ -175,7 +175,7 @@ body{
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* CSS for header */
 #header{

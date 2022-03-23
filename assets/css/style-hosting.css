@@ -28,7 +28,7 @@ html{
 }
 
 /* CSS for loading */
-.loading{
+/* .loading{
     position: fixed;
     top: 0;
     right: 0;
@@ -133,7 +133,7 @@ html{
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /* CSS for background */
 div#content {
