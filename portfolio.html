@@ -13,6 +13,30 @@
 </head>
 
 <body>
+     <!-- Start-Loading -->
+     <div id = "preloader" class="loading">
+        <div class="loader">
+            <div class="loader-inner">
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+              <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- End-loading -->
+
     <div id="main">
         <!-- Start header -->
         <div id="header">
@@ -111,11 +135,13 @@
                 <div class="row">
                     <div class="col l-4 m-4 c-12">
                         <div class="card-location">
-                            <div class="card-img">
-                                <button class="js-openpic">
-                                    <img src="./assets/img/portfolio-pic1.jpg" alt="/">
-                                    <span class = "zoom"></span>
-                                </button>
+                            <div class="card-img container">
+                                <div class="image">
+                                    <button class="js-openpic">
+                                        <img src="./assets/img/portfolio-pic1.jpg" alt="/">
+                                        <span class = "zoom"></span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="card-location-content">
                                 <p class="text-header-card">Empus pharetra consect.</p>
@@ -126,12 +152,14 @@
                     </div>
                     <div class="col l-4 m-4 c-12">
                         <div class="card-location">
-                            <div class="card-img">
+                            <div class="card-img container">
+                                <div class="image">
                                 <button class="js-openpic">
                                     <img src="./assets/img/portfolio-pic2.jpg" alt="/">
                                     <span class = "zoom"></span>
                                 </button>
                             </div>
+                        </div>
                             <div class="card-location-content">
                                 <p class="text-header-card">Nunc mollis convallis lacu.</p>
                                 <p class="text-content-card">Proin nec nisl ut ligula suscipit euismod vita e at diam. Cras purus nisl, mollis eget sa.</p>
@@ -141,12 +169,14 @@
                     </div>
                     <div class="col l-4 m-4 c-12">
                         <div class="card-location">
-                            <div class="card-img">
+                            <div class="card-img container">
+                                <div class="image">
                                 <button class="js-openpic">
                                     <img src="./assets/img/portfolio-pic3.jpg" alt="/">
                                     <span class = "zoom"></span>
                                 </button>
                             </div>
+                        </div>
                             <div class="card-location-content">
                                 <p class="text-header-card">Adipiscing sapien hdrerit.</p>
                                 <p class="text-content-card">Proin nec nisl ut ligula suscipit euismod vita e at diam. Cras purus nisl, mollis eget sa.</p>
@@ -156,12 +186,14 @@
                     </div>
                     <div class="col l-4 m-4 c-12">
                         <div class="card-location">
-                            <div class="card-img">
+                            <div class="card-img container">
+                                <div class="image">
                                 <button class="js-openpic">
                                     <img src="./assets/img/portfolio-pic4.jpg" alt="/">
                                     <span class = "zoom"></span>
                                 </button>
                             </div>
+                        </div>
                             <div class="card-location-content">
                                 <p class="text-header-card">Empus pharetra consect.</p>
                                 <p class="text-content-card">Proin nec nisl ut ligula suscipit euismod vita e at diam. Cras purus nisl, mollis eget sa.</p>
@@ -171,12 +203,14 @@
                     </div>
                     <div class="col l-4 m-4 c-12">
                         <div class="card-location">
-                            <div class="card-img">
+                            <div class="card-img container">
+                                <div class="image">
                                 <button class="js-openpic">
                                     <img src="./assets/img/portfolio-pic5.jpg" alt="/">
                                     <span class = "zoom"></span>
                                 </button>
                             </div>
+                        </div>
                             <div class="card-location-content">
                                 <p class="text-header-card">Nunc mollis convallis lacu.</p>
                                 <p class="text-content-card">Proin nec nisl ut ligula suscipit euismod vita e at diam. Cras purus nisl, mollis eget sa.</p>
@@ -263,6 +297,7 @@
     </div>
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/script-portfolio.js"></script>
+    <script src = './assets/js/script-loading.js'></script>
 </body>
 
 </html>

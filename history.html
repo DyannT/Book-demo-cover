@@ -13,6 +13,30 @@
 </head>
 
 <body>
+    <!-- Start-Loading -->
+    <div id="preloader" class="loading">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End-loading -->
+
     <div id="main">
         <!-- Start header -->
         <div id="header">
@@ -22,7 +46,7 @@
                         <div class="desc-header">
                             <h1><a href="index.html">“Alice comes back home”</a></h1>
                             <p>AUTHOR: TOM CURSON</p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,7 +61,8 @@
                     <div class="col l-12 m-12">
                         <div id="menu">
                             <ul class="menu1">
-                                <li style="width: 131px;"><a style="display: flex;align-items: center;" href="index.html">Home
+                                <li style="width: 131px;"><a style="display: flex;align-items: center;"
+                                        href="index.html">Home
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -108,37 +133,61 @@
                 <div class="row">
                     <div class="col l-6 m-12 c-12">
                         <div class="card-history">
-                            <img src="./assets/img/history1.jpg" alt="">
+                            <div class="container">
+                                <div class="image image">
+                                    <img src="./assets/img/history1.jpg" alt="">
+                                </div>
+                            </div>
+
                             <div class="card-content-history">
                                 <a href="">Phasellus vel ante sit amet lacinia hendrerit.</a>
-                                <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
+                                <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
+                                    vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="card-history">
-                            <img src="./assets/img/history2.jpg" alt="">
+                            <div class="container">
+                                <div class="image image">
+                                    <img src="./assets/img/history2.jpg" alt="">
+                                </div>
+                            </div>
+
                             <div class="card-content-history">
                                 <a href="">Integer iaculis enim tortor, nec fermentum.</a>
-                                <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
+                                <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
+                                    suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="card-history">
-                            <img src="./assets/img/history3.jpg" alt="">
+                            <div class="container">
+                                <div class="image image">
+                                    <img src="./assets/img/history3.jpg" alt="">
+                                </div>
+                            </div>
+
                             <div class="card-content-history">
                                 <a href="">Maecenas aliquam, elit vitae rhoncus lobortis.</a>
-                                <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
+                                <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
+                                    vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col l-6 m-12 c-12">
                         <div class="card-history">
-                            <img src="./assets/img/history4.jpg" alt="">
+                            <div class="container">
+                                <div class="image image">
+                                    <img src="./assets/img/history4.jpg" alt="">
+                                </div>
+                            </div>
+
                             <div class="card-content-history">
                                 <a href="">In at enim eu purus pretium semper sit amet.</a>
-                                <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
+                                <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
+                                    suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
                             </div>
                         </div>
                     </div>
@@ -149,8 +198,11 @@
                     <div class="col l-8 m-8 c-12">
                         <div class="header-list">
                             <h3>ABOUT THE MAIN CHARACTER</h3>
-                            <p class = "header-text-list">Sed aliquam nulla ligula, nec suscipit augue varius a.</p>
-                            <p class = "body-text-list">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at diam. Cras purus nisl, mollis eget sapien et, adipiscing bibendum massa.Vestibulum placerat bibendum.</p>
+                            <p class="header-text-list">Sed aliquam nulla ligula, nec suscipit augue varius a.</p>
+                            <p class="body-text-list">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
+                                porta sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel luctus eros.
+                                Proin nec nisl ut ligula suscipit euismod vitae at diam. Cras purus nisl, mollis eget
+                                sapien et, adipiscing bibendum massa.Vestibulum placerat bibendum.</p>
                         </div>
                         <div class="row">
                             <div class="col l-6 m-6 c-12">
@@ -162,7 +214,7 @@
                                     <li><a href="#">Nulla vel luctus eros proin nec nisl</a></li>
                                     <li><a href="#">Utigula suscipit euismod vitae at diam</a></li>
                                 </ul>
-                            </div>        
+                            </div>
                             <div class="col l-6 m-6 c-12">
                                 <ul class="list-content">
                                     <li><a href="#">Nulla vel luctus eros proin nec nisl</a></li>
@@ -172,15 +224,22 @@
                                     <li><a href="#">Vestibulum placerat bibendum risus quis</a></li>
                                     <li><a href="#">Adipiscing nunc malesuada et</a></li>
                                 </ul>
-                            </div> 
-                        </div>            
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col l-4 m-4 c-12">
                         <div class="header-list">
                             <h3>BORN OF REAL LIFE</h3>
-                            <img src="./assets/img/history5.jpg" alt="">
-                            <p>Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at diam. Cras massa.Vestibulum placerat bibendum.</p>
+                            <div class="container">
+                                <div class="image image">
+                                    <img src="./assets/img/history5.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <p>Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta sollicitudin
+                                magna non sagittis. Mauris nec blandit massa. Nulla vel luctus eros. Proin nec nisl ut
+                                ligula suscipit euismod vitae at diam. Cras massa.Vestibulum placerat bibendum.</p>
                         </div>
                     </div>
                 </div>
@@ -197,9 +256,10 @@
                             <div class="header-text-footer">
                                 <p>GET IN TOUCH</p>
                             </div>
-    
+
                             <div class="body-text-footer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurissemper eu turpis sed, mollis vehicula neque.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurissemper eu turpis sed,
+                                    mollis vehicula neque.
                                     Ut in urna ante. Etiam sit amet arcu ante.</p>
                             </div>
 
@@ -214,7 +274,7 @@
                                     <i class="ti-pinterest-alt"></i>
                                 </a>
                                 <a href="#">
-                                   <i class="ti-google"></i>
+                                    <i class="ti-google"></i>
                                 </a>
                                 <a href="#">
                                     <i class="ti-github"></i>
@@ -233,7 +293,7 @@
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <div class="text-desc">
-                            <p>Alice comes back home © 2022 | 
+                            <p>Alice comes back home © 2022 |
                                 <span><a href="#"> Privacy Policy</a></span>
                             </p>
                         </div>
@@ -245,6 +305,7 @@
 
     </div>
     <script src="./assets/js/scripts.js"></script>
+    <script src='./assets/js/script-loading.js'></script>
 </body>
 
 </html>
