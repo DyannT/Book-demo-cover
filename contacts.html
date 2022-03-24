@@ -126,21 +126,26 @@
         </div>
         <!-- End-nav -->
 
-
+        <main>
+            <section class="home-intro"></section>
         <!-- Start-content -->
         <div id="content">
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-8 m-8 c-12">
-                        <h3>GET IN TOUCH</h3>
-                        <div class="map-content">
+                        <div class = "fade-in">
+                            <h3>GET IN TOUCH</h3>
+                        </div>
+                        <div class="map-content fade-in">
                             <iframe class="gg-map"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6336198864424!2d105.82251401440696!3d21.007318693886962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac81a053338d%3A0x6ab48b590e023d51!2zxJBhzKNpIEhvzKNjIFRodcyJeSBMxqHMo2k!5e0!3m2!1svi!2s!4v1647225975143!5m2!1svi!2s"
                                 width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                        <p>The Company Name Inc.</p>
+                        <div class = "fade-in">
+                            <p>The Company Name Inc.</p>
+                        </div>
                         <div class="row">
-                            <div class="col l-6 m-6 c-6">
+                            <div class="col l-6 m-6 c-6 slide-in from-left">
                                 <ul class="list-contact">
                                     <li>8901 Marmora Road,</li>
                                     <li>Glasgow, D04 89GR.</li>
@@ -159,7 +164,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col l-6 m-6 c-6">
+                            <div class="col l-6 m-6 c-6 slide-in from-right">
                                 <ul class="list-contact">
                                     <li>9863 - 9867 Mill Road,</li>
                                     <li>Cambridge, MG09 99HT.</li>
@@ -182,8 +187,10 @@
                     </div>
 
                     <div class="col l-4 m-4 c-12">
-                        <h3>FEEDBACK</h3>
-                        <div class="input-feedback">
+                        <div class = "fade-in">
+                            <h3>FEEDBACK</h3>
+                        </div>
+                        <div class="input-feedback slide-in from-right">
                             <form action="./php/action.php">
                                 <div class="input-div"></div>
                                 <input class="input-form js-input-form" type="text" required placeholder="Name:">
@@ -261,9 +268,11 @@
             </div>
         </div>
         <!-- End-footer-desc -->
+        </main>
     </div>
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/script-contact.js"></script>
+    <script src="./assets/js/observers.js"></script>
 </body>
 
 </html>
