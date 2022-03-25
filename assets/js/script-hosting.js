@@ -3,17 +3,41 @@ backbtn.onclick = function(){
     history.back()
 };
 
-const meNu = document.querySelector('#mobile-menu')
-console.log(meNu)
+const meNu = document.querySelector('.btn-menu')
+const openMenu = document.querySelector('.btn-main')
+const listInfo = document.querySelector('#slidebar')
+
+
+
 meNu.onclick = function () {
-    var listInfo = document.querySelector('.list-info')
-    if(listInfo.style.display === 'none'){
-        listInfo.style.display = 'block'
-    }
-    else{
-        listInfo.style.display = 'none'
-    }
+    listInfo.style.display = 'none'
+	console.log(openMenu)
 }
+
+openMenu.onclick = function () {
+    listInfo.style.display = 'block'
+	console.log(meNu)
+}
+
+
+
+
+const openP = document.getElementsByClassName('open-function')
+const subNAV = document.getElementsByClassName('sub-nav')
+
+console.log(openP)
+console.log(subNAV)
+for(const key in openP){
+	openP[key].onclick = function () {
+		if(subNAV[key].style.display === 'none'){
+			subNAV[key].style.display = 'block'
+		}
+		else{subNAV[key].style.display = 'none'}
+	}
+}
+
+
+
 
 const counters = document.querySelectorAll('.counter');
 const speed = 300; // The lower the slower
