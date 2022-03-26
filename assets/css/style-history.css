@@ -377,9 +377,10 @@ body{
 }
 
 .card-history {
-    display:flex;
+    display: flex;
     margin-top: 50px;
     overflow: hidden;
+    align-items: center;
 }
 
 /* .card-history img{

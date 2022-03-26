@@ -58,6 +58,7 @@ body{
     width: 100%;
     height: 100%;
     transition: 0.7s;
+    overflow: hidden;
 }
 
 .image:hover{
@@ -524,22 +525,22 @@ body{
     width: 24px;
     height: 20px;
     /* Luc dau anh o tren */
-    background: url(../img/zoom_icon.png) top no-repeat;
-    margin-left: -35px;
-    margin-top: 7px;
+    background: url(../img/zoom_icon.png);
+     margin-left: -35px;
+    margin-top: 7px; 
     cursor: pointer;
     color: #000;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; 
 }
 
 .more_btn2:hover {
     /* Hover vao thi anh o duoi */
     background: url(../img/zoom_icon.png) bottom no-repeat;
-}
+} 
 
 a:hover {
     color: #000;
-}
+} 
 
 /* CSS for Recent-posts */
 .recent-posts {
@@ -551,6 +552,7 @@ a:hover {
     display:flex;
     overflow: hidden;
 }
+
 
 .card-recent-posts img{
     width: 100%;
@@ -716,6 +718,9 @@ a:hover {
         margin-top:60px;
     }
 
+    /* .image:hover{
+        transform: scale(1.1);
+    } */
     .card-recent-posts img{
         width: 100vw;
     }

@@ -13,6 +13,7 @@ const data = [
   }
 ]
 
+
 // const data1=[]
 
 function createData(username, password) {
@@ -40,6 +41,8 @@ const userNameCreate = document.querySelector('.create-user-form')
 const passWordCreate = document.querySelector('.create-password-form')
 // Loading
 const loading = document.querySelector('.loading')
+
+
 
 
 
@@ -93,6 +96,9 @@ closebtn1.onclick = function () {
 }
 
 
+
+
+// //////////Test
 // console.log(!(userName.value == "admin"))
 // console.log(password.value = "123456")
 
@@ -111,34 +117,70 @@ closebtn1.onclick = function () {
 // }
 
 
+
+
+
+
+
 // // Check register
+
+// console.log(localStorage.getItem("create-user-form"))
+// console.log(localStorage.getItem("create-password-form"))
+
+// $("#title_hello").html(`Tôi là ${localStorage.getItem("nameUser")}`)
 
 var isRegister = false;
 
 createAcc.onclick = function (e) {
-  var createUser = userNameCreate.value;
-  // console.log(createUser)
-  var createPassword = passWordCreate.value;
-  // console.log(createPassword)
-  var user1 = new createData(createUser,createPassword)
-  // if(data1.indexOf('createUser') && data1.indexOf('createUser'))
-  // console.log(data1.indexOf(['createUser']))
-  // alert(data1);
-  // console.log(user.username)
-  // console.log(user.password)
-  // console.log(user)
-  if(checkCreate(user1.username,user1.password)){
+  // Cách 1 lưu qua data tạm thời khi refresh sẽ mất
+
+
+  // e.preventDefault()
+  // var createUser = userNameCreate.value;
+  // // console.log(createUser)
+  // var createPassword = passWordCreate.value;
+  // var user1 = new createData(createUser,createPassword)
+  // if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.username){
+  //   isRegister = true;
+  //   data.push(user1);
+  //   // console.log(data)
+  //   actionCreate(e)
+  // }
+  // else{
+  //   alert("Tài khoản hoặc mật khẩu bị trùng!!!")
+  //   e.preventDefault()
+  // }
+
+
+  // Cách 2 lưu qua localStorage của web khi refresh sẽ k mất như k tạo đc nhiều acc và chỉ dùng đc ở web của ng dùng
+  // console.log(typeof $(".create-user-form").val());
+  localStorage.setItem("username",$(".create-user-form").val());
+  localStorage.setItem("password",$(".create-password-form").val());
+
+
+  var userInput = localStorage.getItem("username",$(".create-user-form").val())
+  var pwdInput = localStorage.getItem("password",$(".create-password-form").val())
+
+
+  var user1 = new createData(userInput,pwdInput)
+  // console.log(user1)
+  if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.password !== ''){
     isRegister = true;
     data.push(user1);
+    // console.log(data)
     actionCreate(e)
   }
-  // checkRepeat()
+
+  else if(user1.username === '' && user1.password === ''){
+    alert('Please enter a username or password befor register!!')
+  }
+
   else{
-    alert("Tài khoản hoặc mật khẩu bị trùng!!!")
+    alert("username or password Exist !!!")
     e.preventDefault()
   }
   console.log(data)
-  // alert("Tài khoản hoặc mật khẩu bị trùng!!!")
+
 }
 
 function checkCreate(username,password){
@@ -173,21 +215,37 @@ function actionCreate(e){
 }
 
 
+var localU = localStorage.getItem("username",$(".create-user-form").val())
+var localP = localStorage.getItem("password",$(".create-password-form").val())
 
 
-// Check Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Check Login
 var loggedIn = false;
 
 loginAdmin.onclick = function (e) {
+  // e.preventDefault();
+  // console.log(user1.username)
   var password = passWord.value;
   var username = userName.value;
-
-  
 //   loggedIn = login(password);
 //   loggedIn = login(username);
   if(checkLogin(username,password)){
     loggedIn = true;
   }
+  // console.log(e)
   check(e);
 }
 
@@ -196,7 +254,10 @@ function checkLogin(username,password) {
     // console.log((data.concat(data1))[i].username)
       if((data).hasOwnProperty(i)){
           if(username === (data)[i].username && password === (data)[i].password){
-              return true
+              return true;
+          }
+          else if(username === localU && password === localP){
+            return true;
           }
           else{
               continue;

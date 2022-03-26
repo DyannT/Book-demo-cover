@@ -29,10 +29,11 @@ console.log(openP)
 console.log(subNAV)
 for(const key in openP){
 	openP[key].onclick = function () {
-		if(subNAV[key].style.display === 'none'){
-			subNAV[key].style.display = 'block'
+		if(subNAV[key].style.display === 'block'){
+			console.log(openP[key])
+			subNAV[key].style.display = 'none'
 		}
-		else{subNAV[key].style.display = 'none'}
+		else{subNAV[key].style.display = 'block'}
 	}
 }
 

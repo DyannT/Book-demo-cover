@@ -291,7 +291,7 @@ html{
     #slidebar{
         width: 220px;
         /* left: 8px; */
-        /* padding-bottom: 92px; */
+        padding-bottom: 52px;
     }
     #content{
         overflow: hidden;   
@@ -316,6 +316,7 @@ html{
 @media (max-width:739px){
     #slidebar{
         width: 300px;
+        padding-bottom: 21px;
     }   
     .div-info li{
         margin-bottom:10px;

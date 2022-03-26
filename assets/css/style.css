@@ -699,7 +699,7 @@ img{
 }
 
 /* Repon for mobile */
-@media (max-width:739px){
+@media (min-width: 569px) and (max-width:739px){
     /* CSS for main overflow */
     #main{
         overflow-x: hidden;
@@ -712,8 +712,8 @@ img{
 
     /* CSS for slider */
     .slier-item img{
-        margin-left: -43px;
-        margin: 0 auto;
+        /* margin-left: -43px;
+        margin: 0 auto; */
     } 
 
     /* CSS for menu */
@@ -723,7 +723,7 @@ img{
     }
     #menu{
         background-color: #fff;
-        width: 340px;
+        width: 100vw;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         display: none;
         transition: all 0.2s linear;
@@ -747,7 +747,7 @@ img{
     /* CSS for btn */
     .btn-taskbar-mobile{
         padding:10px;
-        top: 306px;
+        top: 302px;
         right: 0;
         position: absolute;
         display: inline-block;
@@ -776,7 +776,98 @@ img{
     }
 
     .desc-content .div-info-author{
-        top: -195px;
+        top: -242px;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
+}
+
+@media (max-width: 568px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
+
+    /* CSS for Header */
+    .content-header h1 a{
+        font-size:59px;
+    }
+
+    /* CSS for slider */
+    .slier-item img{
+        margin-left: -43px;
+        margin: 0 auto;
+    } 
+
+    /* CSS for menu */
+    .menu1{
+        display: inline-block!important;
+        position: relative;
+    }
+    #menu{
+        background-color: #fff;
+        width: 100vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s linear;
+    }
+    #menu .menu1 .menu2{
+        position: absolute;
+        right: -77px;
+        top: -5px;
+    }
+
+    #menu .menu1 .menu2 .menu3{
+        position: absolute;
+        right:-131px;
+        top:60px;
+    }
+    .menu3,
+    .menu2{
+        opacity: 1;
+    }
+
+    /* CSS for btn */
+    .btn-taskbar-mobile{
+        padding:10px;
+        top: 302px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* CSS for slider */
+    .background-silder {
+        top: 0;
+    }
+
+    /* CSS for content */
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .desc-content{
+        overflow: hidden;
+    }
+
+    .desc-content .div-info-author{
+        top: -242px;
     }
 
     /* CSS for footer-item */
