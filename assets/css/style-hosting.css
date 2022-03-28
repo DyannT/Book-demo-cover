@@ -29,7 +29,7 @@ html{
     height:100%;
 }
 
-/* .fade-in {
+.fade-in {
     opacity: 0;
     transition: opacity 250ms ease-in;
   }
@@ -71,7 +71,7 @@ html{
     grid-column: 2 / 3;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-  } */
+  }
 
   .bg {
     animation:slide 3s ease-in-out infinite alternate;
