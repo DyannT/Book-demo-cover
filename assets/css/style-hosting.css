@@ -154,8 +154,8 @@ html{
     display: inline;
 }
 
-.nav li button,
-.nav li a{
+.nav>li>.open-function,
+.nav>li>a{
     color: #fe7676;
     text-decoration: none;
     border-radius: 0;
@@ -178,14 +178,44 @@ html{
     transition: all 0.2s ease-in-out;
 }
 
-.nav li button{
+.nav .sub-nav li .open-function1,
+.nav .sub-nav li a{
+    color: #fe7676;
+    text-decoration: none;
+    border-radius: 0;
+    transition: none;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+    padding: 15px 40px;
+    line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0px;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-change{
+    width: 100%;
+}
+
+.nav li .open-function,
+.nav li .open-function1{
     border: none;
     width: 100%;
     background-color: #fff;
     cursor: pointer;
 }
 
-.nav li button:hover{
+.nav li .open-function1:hover,
+.nav li .open-function:hover{
     background-color: #000
 }
 
@@ -197,8 +227,30 @@ html{
     padding-left: 50px;
 }
 
+.sub-nav1{
+    display: none;
+}
+
 .nav li a:hover{
     background-color: #000
+}
+
+.div-btn-change{
+    text-align: center;
+    margin-top: 10px;
+}
+
+button.btn-change {
+    padding: 5px;
+    background: #fe7676;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-change:hover{
+    background:#000;
+    color: #fe7676;
 }
 
 .div-info {
