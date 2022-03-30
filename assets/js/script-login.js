@@ -229,9 +229,6 @@ var localP = localStorage.getItem("password",$(".create-password-form").val())
 
 
 
-
-
-
 // // Check Login
 var loggedIn = false;
 
@@ -282,8 +279,15 @@ function check(e) {
     alert('Sai tài khoản hoặc mật khẩu!!!');
     e.preventDefault()
 }}
-// BackBtn
+
+
+
+
+//  BackBtn
 backbtn.onclick = function () {
   history.back()
 };
+
+
+
 
