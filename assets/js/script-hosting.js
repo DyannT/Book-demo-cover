@@ -120,6 +120,11 @@ counters.forEach(function (counter) {
 // }
 
 
+
+
+
+
+// Change
 // ALL
 const btnChange1 = document.querySelector('.btn-change1');
 const btnChange2 = document.querySelector('.btn-change2');
@@ -205,6 +210,22 @@ const btnChange75 = document.querySelector('.btn-change75');
 const btnChange76 = document.querySelector('.btn-change76');
 
 
+// Delete
+const btnDel1 = document.querySelector('.btn-del1')
+
+console.log(btnDel1)
+
+btnDel1.onclick = function deleteName() {
+	localStorage.removeItem("headerIndex");
+}
+
+
+
+
+
+
+
+// Change
 // ALL
 btnChange1.onclick = function handleSubmit() {
 	console.log($("#input-header-all").val());
