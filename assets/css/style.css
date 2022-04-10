@@ -53,6 +53,11 @@ ul,li{
     transition: 0.7s;
 }
 
+.image1{
+    width: fit-content;
+    height: auto;
+}
+
 .image:hover{
     transform: scale(1.2);
 }
